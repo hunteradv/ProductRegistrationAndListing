@@ -14,19 +14,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <value>Descrição do produto</value>
+                <value>Descrição</value>
                 <!--<label asp-for="ProductDescription" class="control-label" value = "Descrição do Produto"></label>-->
                 <input asp-for="ProductDescription" class="form-control" />
                 <span asp-validation-for="ProductDescription" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Value" class="control-label"></label>
+                <value>Valor</value>
+                <!--<label asp-for="Value" class="control-label"></label>-->
                 <input asp-for="Value" class="form-control" />
                 <span asp-validation-for="Value" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="AvailableForSell" /> @Html.DisplayNameFor(model => model.AvailableForSell)
+                    <!--@Html.DisplayNameFor(model => model.AvailableForSell)-->
+                    <input class="form-check-input" asp-for="AvailableForSell" />
+                    <value>Disponível para venda</value>
                 </label>
             </div>
             <div class="form-group">
